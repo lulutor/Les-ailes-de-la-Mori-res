@@ -1,7 +1,8 @@
+
 /*
-Theme Name: My Theme
-Author: Hostinger
-Author URI: http://www.hostinger.com/tutorials
+Theme Name: Fly Theme
+Author: Your Name
+Author URI: http://www.yourwebsite.com
 Description: My first responsive HTML5 theme
 Version: 1.0
 License: GNU General Public License v3 or later
@@ -10,10 +11,131 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 * {
   box-sizing: border-box;
-
+}
+html{
+  height: 100%;
+	margin: 0; padding: 0;
 }
 
 body {
     background-color: #f9f9f9;
     font-family: Helvetica;
+    height: 100%;
+  	margin: 0; padding: 0;
+    display : table;
+	  width: 100%;
+}
+
+.my-logo,
+footer {
+  width: 100%;
+  padding-left: 1%;
+  background-color: #54554f;
+  border: 1px solid #78baff;
+  display : table-row;
+	height: 100px; /* à titre d'exemple */
+}
+body > header > h1 > a {
+color: #ffffff;
+font-weight: 400;
+}
+article > header {
+
+}
+footer {
+  margin-top: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 'Margin: 0 auto' centers block content on the page */
+.wrap {
+  width: 100%;
+
+}
+
+.content-area {
+  display: inline-block;
+}
+
+.content-thin {
+    width: 70%;
+}
+
+.content-full-width {
+    width: 100%;
+}
+
+.content-area,
+.primary-sidebar {
+  display: inline-block;
+}
+
+.primary-sidebar {
+  width: 25%;
+  padding: 1%;
+  vertical-align: top;
+  background-color: #ececec;
+}
+
+.article-loop {
+    width: 100%;
+    text-align: left;
+    margin: 5px;
+    padding: 10px;
+}
+
+.article-full {
+  width: 99%;
+  padding: 1%;
+}
+
+.article-loop,
+.article-full {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #FFF;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  .article-loop {
+    width: 99%;
+  }
+}
+
+/* Media Type and Media Feature and Media Feature*/
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+  .inline-text-box {
+    width: 100%;
+    display: block;
+  }
+}
+/* Media Feature Only */
+@media (max-width: 1200px) {
+  .inline-text-box {
+    width: 50%;
+  }
+}
+
+/* GOOD WIDTH */
+.inline-text-box {
+  width: 50%;
+}
+/* BAD WIDTH */
+.inline-text-box {
+  width: 800px;
+}
+/* GOOD IMAGE */
+img {
+  max-width: 100%;
+  height: auto
+}
+/* BAD IMAGE */
+img {
+  width: 100%;
+  height: auto;
 }

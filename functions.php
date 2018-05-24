@@ -25,3 +25,11 @@ function add_Main_Nav() {
 }
 // Hook to the init action hook, run our navigation menu function
 add_action( 'init', 'add_Main_Nav' );
+
+//recherche css
+function additional_custom_styles() {
+
+    /*Enqueue The Styles*/
+    wp_enqueue_style( 'themename', get_template_directory_uri() . 'style.css' );
+}
+add_action( 'wp_enqueue_scripts', 'additional_custom_styles' );
